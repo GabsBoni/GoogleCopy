@@ -1,0 +1,78 @@
+:root {
+    --cor-background: #212123;
+    --cor-reflexo: rgba(255, 255, 255, 0.4);
+    --cores-dancantes: rgb(76, 217, 105), rgb(52, 170, 220), rgb(88, 86, 217),
+        rgb(255, 45, 83);
+}
+
+.banner__imagem{
+    text-align: center;
+    padding: 6em;
+    vertical-align: baseline;
+    margin-top: -6em;   
+}
+
+.logo{
+    font-size: 90px;
+    max-width: 260px;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    animation: coresDancantes 2s linear infinite;
+    text-shadow:
+        #4200f8 0 0 15px,
+        #dc143c 0 0 22px,
+         #ff00ff 0 0 25px;
+}
+
+.banner_pesquisa{
+    margin: 2.8em;
+    text-align: start;
+    border: 1px solid #FFFFFF;
+    border-radius: 24px;
+    padding:1em;
+    width: 50%;
+    border-color: #FFFFFF;
+    background: #FFFFFF;
+    background: linear-gradient(to right, var(--cores-dancantes));
+    border-radius: 10px;
+    position: relative;
+    z-index: 999;
+    animation: coresDancantes 2s linear infinite;
+}
+
+@keyframes coresDancantes {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.banner_pesquisa::placeholder{
+    font-size: 14px;
+    text-align: center;
+    background-position: 1em;
+    background: url(/img/lupadogoogle.svg) no-repeat ;
+}
+
+.search{
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: -5px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    animation: coresDancantes 2s linear infinite;
+    text-shadow:
+        #fc0000 0 0 15px,
+        #dd0505 0 0 22px,
+        #bd0000 0 0 25px;
+}
+
+
+
+
